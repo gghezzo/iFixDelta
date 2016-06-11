@@ -1,0 +1,5 @@
+# Don't put in tempary files 
+*.csv
+*.key
+*.txt
+/build
