@@ -47,13 +47,14 @@ for line in nextIFix:
 print("length of current ", len(currentApars))
 print("length of next ", len(nextApars))
 
-moo = list(nextApars.difference(currentApars))
+moo = nextApars.difference(currentApars)
 print("length of moo ", len(moo))
 boo = list(moo)
 print("length of delta ", len(boo))
 print()
 
 i = 0 
+
 for x in boo: 
 	try:
 		print(i, ' + ', x)
@@ -62,6 +63,7 @@ for x in boo:
 		pass
 	i+= 1
 print(len(boo))
+
 
 currentIFix.close()
 nextIFix.close()
